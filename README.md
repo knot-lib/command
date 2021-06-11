@@ -1,12 +1,12 @@
 knot-lib/command, Command system for kNot Framework.
 =======================
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/knot-lib/config.svg?style=flat-square)](https://packagist.org/packages/knot-lib/config)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/knot-lib/command.svg?style=flat-square)](https://packagist.org/packages/knot-lib/command)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
-[![Build Status](https://travis-ci.org/knot-lib/config.svg?branch=master)](https://travis-ci.org/knot-lib/config)
-[![Coverage Status](https://coveralls.io/repos/github/knot-lib/config/badge.svg?branch=master)](https://coveralls.io/github/knot-lib/config?branch=master)
-[![Code Climate](https://codeclimate.com/github/knot-lib/config/badges/gpa.svg)](https://codeclimate.com/github/knot-lib/config)
-[![Total Downloads](https://img.shields.io/packagist/dt/knot-lib/config.svg?style=flat-square)](https://packagist.org/packages/knot-lib/config)
+[![Build Status](https://travis-ci.org/knot-lib/command.svg?branch=master)](https://travis-ci.org/knot-lib/command)
+[![Coverage Status](https://coveralls.io/repos/github/knot-lib/command/badge.svg?branch=master)](https://coveralls.io/github/knot-lib/command?branch=master)
+[![Code Climate](https://codeclimate.com/github/knot-lib/command/badges/gpa.svg)](https://codeclimate.com/github/knot-lib/command)
+[![Total Downloads](https://img.shields.io/packagist/dt/knot-lib/command.svg?style=flat-square)](https://packagist.org/packages/knot-lib/command)
 
 ## Description
 
