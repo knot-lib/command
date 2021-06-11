@@ -47,6 +47,6 @@ final class BaseCommandTest extends TestCase
         $cmd->execute(['Hello, David!']);
         $output = ob_get_clean();
 
-        $this->assertEquals("Hello, David!\r\n", $output);
+        $this->assertEquals('Hello, David!' . PHP_EOL, $output);
     }
 }
