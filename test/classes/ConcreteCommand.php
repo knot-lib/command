@@ -3,9 +3,9 @@ declare(strict_types=1);
 
 namespace knotlib\command\test\classes;
 
-use knotlib\command\BaseCommand;
+use knotlib\command\Command;
 
-final class ConcreteBaseCommand extends BaseCommand
+final class ConcreteCommand extends Command
 {
     public function configure(): void
     {

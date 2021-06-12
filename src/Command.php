@@ -8,7 +8,7 @@ use Throwable;
 use knotlib\command\service\DI;
 use knotlib\kernel\di\DiContainerInterface;
 
-abstract class BaseCommand extends CommandDescriptor implements CommandInterface
+abstract class Command extends CommandDescriptor implements CommandInterface
 {
     /** @var DiContainerInterface */
     private $di;

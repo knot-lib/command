@@ -5,13 +5,13 @@ namespace knotlib\command\test;
 
 use knotlib\command\console_io\DefaultConsoleIO;
 use knotlib\command\service\DI;
-use knotlib\command\test\classes\ConcreteBaseCommand;
+use knotlib\command\test\classes\ConcreteCommand;
 use knotlib\di\Container;
 use knotlib\kernel\di\DiContainerInterface;
 use knotlib\support\adapter\PsrContainerAdapter;
 use PHPUnit\Framework\TestCase;
 
-final class BaseCommandTest extends TestCase
+final class CommandTest extends TestCase
 {
     /** @var DiContainerInterface */
     private $di;
@@ -25,7 +25,7 @@ final class BaseCommandTest extends TestCase
 
     public function testConfigure()
     {
-        $cmd = new ConcreteBaseCommand();
+        $cmd = new ConcreteCommand();
 
         $this->assertEquals('', $cmd->getCommandPath());
         $this->assertEquals([], $cmd->getOrderdArgs());
@@ -39,7 +39,7 @@ final class BaseCommandTest extends TestCase
     }
     public function testExecute()
     {
-        $cmd = new ConcreteBaseCommand();
+        $cmd = new ConcreteCommand();
 
         $cmd->setDi(new PsrContainerAdapter($this->di));
 
