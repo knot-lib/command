@@ -11,15 +11,15 @@ class CommandDescriptor implements JsonSerializable
 {
     use VirtualClassNameTrait;
 
-    const SPECKEY_COMMAND_PATH      = 'command_path';
-    const SPECKEY_ALIASES           = 'aliases';
-    const SPECKEY_CLASS_ROOT        = 'class_root';
-    const SPECKEY_CLASS_NAME        = 'class_name';
-    const SPECKEY_NAME_SPACE        = 'name_space';
-    const SPECKEY_REQUIRED_MODULES  = 'required_modules';
-    const SPECKEY_ORDERED_ARGS      = 'ordered_args';
-    const SPECKEY_NAMED_ARGS        = 'named_args';
-    const SPECKEY_COMMAND_HELPS     = 'command_helps';
+    const KEY_COMMAND_PATH      = 'command_path';
+    const KEY_ALIASES           = 'aliases';
+    const KEY_CLASS_ROOT        = 'class_root';
+    const KEY_CLASS_NAME        = 'class_name';
+    const KEY_NAME_SPACE        = 'name_space';
+    const KEY_REQUIRED_MODULES  = 'required_modules';
+    const KEY_ORDERED_ARGS      = 'ordered_args';
+    const KEY_NAMED_ARGS        = 'named_args';
+    const KEY_COMMAND_HELPS     = 'command_helps';
 
     /** @var string */
     private $command_path;
@@ -55,15 +55,15 @@ class CommandDescriptor implements JsonSerializable
      */
     public function __construct(array $command_spec = [])
     {
-        $this->command_path        = $command_spec[self::SPECKEY_COMMAND_PATH] ?? '';
-        $this->aliases             = $command_spec[self::SPECKEY_ALIASES] ?? [];
-        $this->class_root          = $command_spec[self::SPECKEY_CLASS_ROOT] ?? '';
-        $this->class_name          = $command_spec[self::SPECKEY_CLASS_NAME] ?? '';
-        $this->name_space          = $command_spec[self::SPECKEY_NAME_SPACE] ?? '';
-        $this->required_modules    = $command_spec[self::SPECKEY_REQUIRED_MODULES] ?? [];
-        $this->ordered_args        = $command_spec[self::SPECKEY_ORDERED_ARGS] ?? [];
-        $this->named_args          = $command_spec[self::SPECKEY_NAMED_ARGS] ?? [];
-        $this->command_helps       = $command_spec[self::SPECKEY_COMMAND_HELPS] ?? [];
+        $this->command_path        = $command_spec[self::KEY_COMMAND_PATH] ?? '';
+        $this->aliases             = $command_spec[self::KEY_ALIASES] ?? [];
+        $this->class_root          = $command_spec[self::KEY_CLASS_ROOT] ?? '';
+        $this->class_name          = $command_spec[self::KEY_CLASS_NAME] ?? '';
+        $this->name_space          = $command_spec[self::KEY_NAME_SPACE] ?? '';
+        $this->required_modules    = $command_spec[self::KEY_REQUIRED_MODULES] ?? [];
+        $this->ordered_args        = $command_spec[self::KEY_ORDERED_ARGS] ?? [];
+        $this->named_args          = $command_spec[self::KEY_NAMED_ARGS] ?? [];
+        $this->command_helps       = $command_spec[self::KEY_COMMAND_HELPS] ?? [];
     }
 
     /**
